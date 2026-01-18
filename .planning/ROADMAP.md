@@ -44,12 +44,12 @@ Plans:
   3. User can run quality checks (null, unique, range, referential integrity) against data sources
   4. User receives alerts when data freshness exceeds configured SLA or volume anomalies are detected
   5. Quality validations can execute within AWS Step Functions pipelines
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md — DQ Recommender Agent & Rule Engine (Strands agent, Bedrock, rule templates, approval workflow)
+- [ ] 02-02-PLAN.md — Data Validator & Pipeline Integration (Glue DQ, Step Functions, freshness monitoring, alerting)
+- [ ] 02-03-PLAN.md — Quality Rules Frontend (rule creation UI, validation results, alert dashboard)
 
 ### Phase 3: Column-Level Lineage
 **Goal**: Users can trace data flow and transformations across connected sources
@@ -92,6 +92,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 (decimal phases insert between
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Data Profiling | 0/3 | Planned | - |
-| 2. Data Quality & AI Recommendations | 0/3 | Not started | - |
+| 2. Data Quality & AI Recommendations | 0/3 | Planned | - |
 | 3. Column-Level Lineage | 0/3 | Not started | - |
 | 4. Visibility & Integration | 0/2 | Not started | - |
