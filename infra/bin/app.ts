@@ -3,6 +3,7 @@ import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
 import { DataStack } from '../lib/data-stack';
 import { ProfilerStack } from '../lib/profiler-stack';
+import { DQRecommenderStack } from '../lib/dq-recommender-stack';
 
 const app = new cdk.App();
 
@@ -37,3 +38,13 @@ const profilerStack = new ProfilerStack(app, 'DataFoundationsProfilerStack', {
 
 // Explicit dependency: ProfilerStack depends on DataStack
 profilerStack.addDependency(dataStack);
+
+// DQRecommenderStack: DQ Recommender service (Lambda, API Gateway)
+const dqRecommenderStack = new DQRecommenderStack(app, 'DataFoundationsDQRecommenderStack', {
+  env,
+  description: 'Data Foundations - DQ Recommender service (Lambda, API Gateway)',
+  tags: {
+    Project: 'DataFoundations',
+    Component: 'DQRecommenderStack',
+  },
+});
