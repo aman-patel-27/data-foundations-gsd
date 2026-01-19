@@ -13,7 +13,7 @@ This roadmap delivers the Data Lineage & Quality module through four phases, sta
 - [x] **Phase 1: Foundation & Data Profiling** - Infrastructure, connectors, and Data Profiler agent
 - [x] **Phase 2: Data Quality & AI Recommendations** - DQ checks, AI rule generation, validation workflow
 - [x] **Phase 3: Column-Level Lineage** - Data flow tracking with transformation visibility
-- [ ] **Phase 4: Visibility & Integration** - Dashboard, alerts, API, historical trends
+- [x] **Phase 4: Visibility & Integration** - Dashboard, alerts, API, historical trends
 
 ## Phase Details
 
@@ -82,8 +82,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Notifications & Quality Scoring (Slack/email Lambdas, notification CDK stack, trend aggregation functions)
-- [ ] 04-02-PLAN.md — Dashboard & REST API (overview page with Recharts, REST endpoints, Swagger documentation)
+- [x] 04-01-PLAN.md — Notifications & Quality Scoring (Slack/email Lambdas, notification CDK stack, trend aggregation functions)
+- [x] 04-02-PLAN.md — Dashboard & REST API (overview page with Recharts, REST endpoints, Swagger documentation)
 
 ## Progress
 
@@ -95,4 +95,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 (decimal phases insert between
 | 1. Foundation & Data Profiling | 3/3 | Complete | 2025-01-18 |
 | 2. Data Quality & AI Recommendations | 4/4 | Complete | 2025-01-18 |
 | 3. Column-Level Lineage | 3/3 | Complete | 2025-01-19 |
-| 4. Visibility & Integration | 0/2 | Planned | - |
+| 4. Visibility & Integration | 2/2 | Complete | 2025-01-19 |
