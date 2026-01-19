@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2025-01-18)
 ## Current Position
 
 Phase: 3 of 4 (Column-Level Lineage)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-01-19 - Completed 03-01-PLAN.md
+Last activity: 2026-01-19 - Completed 03-02-PLAN.md
 
-Progress: [████████░░] 80%
+Progress: [████████░░] 82%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
-- Average duration: 9.5 min
-- Total execution time: 1.27 hours
+- Total plans completed: 9
+- Average duration: 9.2 min
+- Total execution time: 1.38 hours
 
 **By Phase:**
 
@@ -29,11 +29,11 @@ Progress: [████████░░] 80%
 |-------|-------|-------|----------|
 | 01-foundation | 3/3 | 37 min | 12.3 min |
 | 02-dq-recommendations | 4/4 | 33 min | 8.3 min |
-| 03-column-lineage | 1/3 | 5 min | 5.0 min |
+| 03-column-lineage | 2/3 | 12 min | 6.0 min |
 
 **Recent Trend:**
-- Last 5 plans: 02-02 (10 min), 02-03a (7 min), 02-03b (8 min), 03-01 (5 min)
-- Trend: Accelerating (agent patterns well-established from Phase 1-2)
+- Last 5 plans: 02-03a (7 min), 02-03b (8 min), 03-01 (5 min), 03-02 (7 min)
+- Trend: Stable fast execution (established patterns from earlier phases)
 
 *Updated after each plan completion*
 
@@ -84,6 +84,11 @@ Recent decisions affecting current work:
 - [03-01]: sql_hash field for edge deduplication when re-processing queries
 - [03-01]: LineageAgentProxy lazy loading (consistent with profiler/dq_recommender)
 - [03-01]: Temperature 0.3 for lineage agent (balance consistency and flexibility)
+- [03-02]: Redshift Data API for extraction (serverless-friendly, matches profiler pattern)
+- [03-02]: 2-hour lookback on hourly EventBridge schedule (overlap for safety)
+- [03-02]: OpenLineage consumer at /api/openlineage (INT-02 external tool integration)
+- [03-02]: sql_hash deduplication prevents reprocessing same queries
+- [03-02]: Error continuation in batch extraction (log and skip failed queries)
 
 ### Pending Todos
 
@@ -95,6 +100,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-19T01:22:35Z
-Stopped at: Completed 03-01-PLAN.md
+Last session: 2026-01-19T01:32:59Z
+Stopped at: Completed 03-02-PLAN.md
 Resume file: None
